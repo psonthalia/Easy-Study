@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ADj-tW-Z5r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5nl-eH-dAa">
+            <objects>
+                <viewController id="ADj-tW-Z5r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qtz-SV-DXm"/>
+                        <viewControllerLayoutGuide type="bottom" id="GfA-26-gN6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uvz-Sb-3YV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Easy Study" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-mC-AcB">
+                                <rect key="frame" x="59" y="20" width="203" height="62"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="curve.png" translatesAutoresizingMaskIntoConstraints="NO" id="Agg-9A-Yic">
+                                <rect key="frame" x="0.0" y="48" width="320" height="71"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="eX6-Ib-KNR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Unknown.png" translatesAutoresizingMaskIntoConstraints="NO" id="AQM-Wd-VcF">
+                                <rect key="frame" x="0.0" y="250" width="241" height="188"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-6t-aaV">
+                                <rect key="frame" x="230" y="335" width="74" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="cnN-Pa-3Pe"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="q9w-yu-zwn"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pao-c8-12e">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <animations/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-0T-4yK">
+                                <rect key="frame" x="230" y="408" width="74" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZVn-gQ-2d4"/>
+                                    <constraint firstAttribute="width" constant="74" id="hW4-7N-vtK"/>
+                                </constraints>
+                                <state key="normal" title="Store">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rFn-1F-Ncd" kind="presentation" id="tNl-aM-UiE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517368342289" blue="0.24433491955978803" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pao-c8-12e" firstAttribute="leading" secondItem="Uvz-Sb-3YV" secondAttribute="leadingMargin" constant="-20" id="7fP-H9-wjd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4bo-0T-4yK" secondAttribute="trailing" constant="-4" id="91r-CB-Vll"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yaI-6t-aaV" secondAttribute="trailing" constant="-4" id="FFj-1j-bG4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pao-c8-12e" secondAttribute="trailing" constant="-20" id="LPk-zf-2e6"/>
+                            <constraint firstItem="AQM-Wd-VcF" firstAttribute="leading" secondItem="Uvz-Sb-3YV" secondAttribute="leadingMargin" constant="-20" id="RWo-Re-RWA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQM-Wd-VcF" secondAttribute="trailing" constant="59" id="ZRG-av-x5M"/>
+                            <constraint firstItem="JfE-mC-AcB" firstAttribute="leading" secondItem="Uvz-Sb-3YV" secondAttribute="leadingMargin" constant="39" id="gTR-ec-pKz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JfE-mC-AcB" secondAttribute="trailing" constant="38" id="inw-9B-KKx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Agg-9A-Yic" secondAttribute="trailing" constant="-20" id="tw7-5K-kkq"/>
+                            <constraint firstItem="Agg-9A-Yic" firstAttribute="leading" secondItem="Uvz-Sb-3YV" secondAttribute="leadingMargin" constant="-20" id="vIc-Aj-XPU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="adViewHome" destination="Pao-c8-12e" id="10V-Rl-KDv"/>
+                        <outlet property="mainBg" destination="Uvz-Sb-3YV" id="uVK-Pb-dNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6f-Hv-klJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l8g-f3-Pfg"/>
+                        <viewControllerLayoutGuide type="bottom" id="9c5-93-HbI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plb-rX-RKb">
+                                <rect key="frame" x="-27" y="69" width="375" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Industrialization">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XaL-Or-bj4" kind="presentation" id="jHD-WK-7Fp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHn-tQ-NVc">
+                                <rect key="frame" x="100" y="20" width="120" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ch-ja-vyg">
+                                <rect key="frame" x="5" y="20" width="37" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown1.png" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-4y-oea">
+                                <rect key="frame" x="25" y="296" width="270" height="142"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPw-di-G7t">
+                                <rect key="frame" x="50" y="20" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Up-DY-ad8">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <animations/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-Ji-Ahq">
+                                <rect key="frame" x="5" y="480" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ADj-tW-Z5r" kind="presentation" id="RQ7-db-5L5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98q-k7-LvY">
+                                <rect key="frame" x="120" y="107" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Revolutions"/>
+                                <connections>
+                                    <segue destination="UZU-7W-QNd" kind="presentation" id="MpO-Wo-iKg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Coming Soon..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1K-TZ-MEc">
+                                <rect key="frame" x="61" y="145" width="198" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="SubjectsBg" destination="kh9-bI-dsS" id="XOB-zW-utj"/>
+                        <outlet property="adView1" destination="7Up-DY-ad8" id="H8g-FC-AlW"/>
+                        <outlet property="goldTest" destination="iPw-di-G7t" id="7FN-yu-NQk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CC9-xn-qwd">
+            <objects>
+                <viewController id="UZU-7W-QNd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s3N-CP-tpf"/>
+                        <viewControllerLayoutGuide type="bottom" id="TA9-Dz-1np"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYA-Z2-ZFS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RcP-bU-xE7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKd-aY-B6R">
+                                        <rect key="frame" x="100" y="60" width="124" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="French Revolution">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="S8Q-gZ-RMh" kind="presentation" id="4rf-Vl-2ec"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Revolutions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTm-jz-En9">
+                                        <rect key="frame" x="100" y="18" width="120" height="29"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGt-ZI-YpW">
+                                        <rect key="frame" x="98" y="119" width="124" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Haitian Revolution"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5d-tx-fvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q6t-dy-8At">
+            <objects>
+                <viewController id="S8Q-gZ-RMh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zsy-Oy-Li3"/>
+                        <viewControllerLayoutGuide type="bottom" id="tmn-kU-z9D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JTt-VV-I6v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="French Revolution" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFC-GV-tUC">
+                                <rect key="frame" x="64" y="28" width="192" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-oc-2Jt">
+                                <rect key="frame" x="16" y="6" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDD-lk-xgx">
+                                <rect key="frame" x="16" y="502" width="95" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Text Review">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ygv-0L-MaT" kind="presentation" id="H58-kt-JyP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9g-nk-GB3">
+                                <rect key="frame" x="225" y="502" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Visual Test"/>
+                                <connections>
+                                    <segue destination="ysb-ZP-vyC" kind="presentation" id="Mjm-vl-mWZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugd-T8-m06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aXI-a2-k99">
+            <objects>
+                <viewController id="ysb-ZP-vyC" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BtF-qJ-z1S"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wl-BD-5MA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d3d-NS-f9k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="French Revolution Visual Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-NY-wUv">
+                                <rect key="frame" x="10" y="28" width="301" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="classRanks" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-jE-PNS">
+                                <rect key="frame" x="5" y="89" width="310" height="252"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1p-mH-n9z">
+                                <rect key="frame" x="22" y="349" width="278" height="56"/>
+                                <animations/>
+                                <string key="text">The following chart represents economic inequality because
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alg-0i-e1N">
+                                <rect key="frame" x="0.0" y="413" width="320" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal">
+                                    <string key="title">The third estate paid 50% of their income in taxes
+</string>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-Ep-UcO">
+                                <rect key="frame" x="0.0" y="458" width="320" height="49"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal">
+                                    <string key="title">The bourgeoisie had many more opportunities than peasants and the second estate
+</string>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="frenchRevVisual" destination="QAn-Ep-UcO" id="deX-vG-xtK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XzN-ML-4dz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="swN-x6-D9g">
+            <objects>
+                <viewController id="Ygv-0L-MaT" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="axq-4s-8PR"/>
+                        <viewControllerLayoutGuide type="bottom" id="eSM-uc-j68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k26-qf-8qw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a49-Sv-mmC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Fill In the Blanks" id="8dM-rW-NEr"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EjS-s5-Nyl">
+                                <rect key="frame" x="0.0" y="44" width="320" height="812"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in the three Estates." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gor-6y-7px">
+                                        <rect key="frame" x="155" y="190" width="153" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7n-sc-urB">
+                                        <rect key="frame" x="8" y="8" width="279" height="119"/>
+                                        <animations/>
+                                        <string key="text">The French revolution was caused by a variety of political, social, and economic reasons. These reasons include the weak leadership of ____________</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOg-s4-63p">
+                                        <rect key="frame" x="8" y="97" width="116" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-gW-evk">
+                                        <rect key="frame" x="58" y="186" width="97" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" that was inherited from previous kings and worsened by helping the patriots in the American Revolution, and the social" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aB-0E-r1I">
+                                        <rect key="frame" x="8" y="106" width="300" height="128"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=", the increasing debt " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A25-KB-ZQF">
+                                        <rect key="frame" x="125" y="100" width="162" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piX-pi-3kX">
+                                        <rect key="frame" x="8" y="219" width="300" height="382"/>
+                                        <animations/>
+                                        <string key="text">The Old Regime was the feudal social structure that King Louis XVI continued to use. The first estate was made up of the ____--------. The second estate was made up of ____-------. The Third Estate was made up of the rest of the population, including the middle class (or bourgeoisie), the ______-------, and the urban poor. The Old Regime was unrepresentative of France’s social reality, as some of the bourgeoisie was becoming as rich as the nobility, and they believed they deserved the same privileges and power. It eventually died out when the later revolutionary governments dissolved the nobles as a social order.
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1x-j1-EBo">
+                                        <rect key="frame" x="132" y="305" width="85" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSM-YJ-yuI">
+                                        <rect key="frame" x="34" y="287" width="90" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIS-Qn-ZbJ">
+                                        <rect key="frame" x="161" y="365" width="101" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfW-ee-WG9">
+                                <rect key="frame" x="0.0" y="856" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Back" id="uqv-bB-gLF">
+                                        <connections>
+                                            <segue destination="S8Q-gZ-RMh" kind="presentation" id="qRf-as-ZUE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="91Z-B8-9FL"/>
+                                    <barButtonItem title="Check Answers" id="tKp-lH-8Bh">
+                                        <connections>
+                                            <action selector="checkAnswersFrenchRev:" destination="Ygv-0L-MaT" id="msI-ia-AZU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EjS-s5-Nyl" firstAttribute="leading" secondItem="a49-Sv-mmC" secondAttribute="leading" id="4MD-hk-hP7"/>
+                            <constraint firstItem="NfW-ee-WG9" firstAttribute="leading" secondItem="EjS-s5-Nyl" secondAttribute="leading" id="4vG-d4-m4R"/>
+                            <constraint firstItem="NfW-ee-WG9" firstAttribute="bottom" secondItem="eSM-uc-j68" secondAttribute="top" id="5Mi-xF-7Vf"/>
+                            <constraint firstItem="a49-Sv-mmC" firstAttribute="leading" secondItem="k26-qf-8qw" secondAttribute="leading" id="Igm-Jd-uIr"/>
+                            <constraint firstItem="EjS-s5-Nyl" firstAttribute="trailing" secondItem="NfW-ee-WG9" secondAttribute="trailing" id="Q3p-5w-KsO"/>
+                            <constraint firstItem="NfW-ee-WG9" firstAttribute="top" secondItem="EjS-s5-Nyl" secondAttribute="bottom" id="UO6-9p-11H"/>
+                            <constraint firstItem="a49-Sv-mmC" firstAttribute="top" secondItem="k26-qf-8qw" secondAttribute="top" id="XSI-a3-9pQ"/>
+                            <constraint firstItem="EjS-s5-Nyl" firstAttribute="top" secondItem="a49-Sv-mmC" secondAttribute="bottom" id="aPC-gX-dOZ"/>
+                            <constraint firstItem="EjS-s5-Nyl" firstAttribute="trailing" secondItem="a49-Sv-mmC" secondAttribute="trailing" id="h68-gy-j7o"/>
+                            <constraint firstAttribute="trailing" secondItem="EjS-s5-Nyl" secondAttribute="trailing" id="zNE-pF-AOr"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="900"/>
+                    <connections>
+                        <outlet property="scrollFrenchRev" destination="EjS-s5-Nyl" id="RX5-XJ-c5f"/>
+                        <outlet property="textField" destination="uOg-s4-63p" id="niC-Xo-z2T"/>
+                        <outlet property="textField2" destination="hTJ-gW-evk" id="VxJ-Ox-GPC"/>
+                        <outlet property="textField3" destination="KSM-YJ-yuI" id="bql-Ro-e46"/>
+                        <outlet property="textField4" destination="Z1x-j1-EBo" id="qH3-ga-sFQ"/>
+                        <outlet property="textField5" destination="ZIS-Qn-ZbJ" id="FAe-PD-fzy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ll-y6-G81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="1389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8A2-pB-GHb">
+            <objects>
+                <viewController id="XaL-Or-bj4" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9mo-Yf-eWw"/>
+                        <viewControllerLayoutGuide type="bottom" id="avv-Di-h0Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aFf-Dt-DQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qj7-DU-TKK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1050"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Industrial Revolution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khr-aj-1eX">
+                                        <rect key="frame" x="-16" y="16" width="375" height="47"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFZ-fq-vni">
+                                        <rect key="frame" x="8" y="103" width="66" height="28"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfl-G6-aJk">
+                                        <rect key="frame" x="31" y="139" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Industrial Revolution">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="IndustrialRevolution:" destination="XaL-Or-bj4" eventType="touchUpInside" id="VeA-ET-D3V"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="cS0-vZ-tb4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-cY-pkE">
+                                        <rect key="frame" x="31" y="177" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Enclosure">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Enclosure:" destination="XaL-Or-bj4" eventType="touchUpInside" id="Hqd-CI-U4p"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="vTb-Sq-mRl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XK-sJ-9Nh">
+                                        <rect key="frame" x="31" y="215" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Crop Rotation">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cropRotation:" destination="XaL-Or-bj4" eventType="touchUpInside" id="W1q-wX-7O3"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="Xee-Bh-3pc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gl-g4-V4Q">
+                                        <rect key="frame" x="31" y="253" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Industrialization">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="industrialization:" destination="XaL-Or-bj4" eventType="touchUpInside" id="JcT-Vr-OJu"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="SAU-cK-1XJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM6-JP-aco">
+                                        <rect key="frame" x="31" y="296" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Factors of Production">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="factorsOfProduction:" destination="XaL-Or-bj4" eventType="touchUpInside" id="BuY-oG-kKN"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="hgf-gx-hHX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-67-aqg">
+                                        <rect key="frame" x="31" y="334" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Factory">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="factory:" destination="XaL-Or-bj4" eventType="touchUpInside" id="9nB-mo-8F0"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="6Av-mx-2kG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1H-Hg-gsB">
+                                        <rect key="frame" x="31" y="372" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Entrepreneur">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="entrepeneur:" destination="XaL-Or-bj4" eventType="touchUpInside" id="Wf6-73-Y13"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="1oP-FL-gjp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28u-8I-T0q">
+                                        <rect key="frame" x="31" y="410" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Urbanization">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="urbanization:" destination="XaL-Or-bj4" eventType="touchUpInside" id="iRl-QO-63B"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="Yja-iL-bol"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7l-cF-87g">
+                                        <rect key="frame" x="31" y="448" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Middle Class">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="middleClass:" destination="XaL-Or-bj4" eventType="touchUpInside" id="hb4-df-s71"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="mSj-Q3-fal"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yX-X9-Kfk">
+                                        <rect key="frame" x="31" y="486" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Stock">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stock:" destination="XaL-Or-bj4" eventType="touchUpInside" id="FdD-Zm-tnM"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="x9w-8k-jaX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-NI-8wT">
+                                        <rect key="frame" x="31" y="524" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Corporation">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="corporation:" destination="XaL-Or-bj4" eventType="touchUpInside" id="8I4-OX-lAs"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="4ib-J3-fQG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4D-Gj-qzg">
+                                        <rect key="frame" x="31" y="562" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Laissez faire">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="laissezFaire:" destination="XaL-Or-bj4" eventType="touchUpInside" id="yGL-wN-7QG"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="pWg-SC-KfV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQP-Xc-ckD">
+                                        <rect key="frame" x="31" y="600" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Adam Smith">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="adamSmith:" destination="XaL-Or-bj4" eventType="touchUpInside" id="7K5-Iw-kcW"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="ySL-6e-P8e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdG-ep-7DN">
+                                        <rect key="frame" x="31" y="638" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Capitalism">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="capitalism:" destination="XaL-Or-bj4" eventType="touchUpInside" id="ugo-fr-v1o"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="H00-c0-30b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO9-wP-Heg">
+                                        <rect key="frame" x="31" y="676" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Utilitarianism">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="utilitarianism:" destination="XaL-Or-bj4" eventType="touchUpInside" id="CEh-V3-S2G"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="OFj-cy-ats"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyt-kX-3Rs">
+                                        <rect key="frame" x="31" y="714" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Socialism">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="socialism:" destination="XaL-Or-bj4" eventType="touchUpInside" id="0ca-4Y-4Qj"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="tQK-C5-pkr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJe-oR-c1y">
+                                        <rect key="frame" x="31" y="752" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Karl Marx">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="karlMarx:" destination="XaL-Or-bj4" eventType="touchUpInside" id="NvJ-Gd-TDw"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="HC0-SX-MSk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma8-me-RtU">
+                                        <rect key="frame" x="31" y="790" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Communism">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="communism:" destination="XaL-Or-bj4" eventType="touchUpInside" id="eDd-ZS-ZsB"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="igR-cZ-Xnh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBr-Iu-TVr">
+                                        <rect key="frame" x="31" y="828" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Union">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="unionWord:" destination="XaL-Or-bj4" eventType="touchUpInside" id="zRC-c4-jvC"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="d3g-xE-hNr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baC-0D-vks">
+                                        <rect key="frame" x="31" y="866" width="280" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Strike">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="strike:" destination="XaL-Or-bj4" eventType="touchUpInside" id="dv3-AV-dpc"/>
+                                            <segue destination="6J0-j0-bnP" kind="presentation" id="uqf-u4-of0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-2G-raX">
+                                        <rect key="frame" x="9" y="8" width="35" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="presentation" id="Tdz-aC-rDf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-5g-f3Y">
+                                        <rect key="frame" x="20" y="904" width="280" height="40"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Take The Quiz - 10 Gold">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zVw-8E-EKq" kind="presentation" id="EDN-Yk-VSK"/>
+                                        </connections>
+                                    </button>
+                                    <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLs-bY-2Jd">
+                                        <rect key="frame" x="0.0" y="940" width="320" height="50"/>
+                                        <animations/>
+                                    </adBannerView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd2-3A-owH">
+                                        <rect key="frame" x="96" y="78" width="128" height="2"/>
+                                        <animations/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tenement" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzc-Hq-QMb">
+                                        <rect key="frame" x="9" y="54" width="79" height="50"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apartment" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRN-2Y-2PR">
+                                        <rect key="frame" x="223" y="57" width="90" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="9gr-gz-20g"/>
+                                    <constraint firstAttribute="height" constant="950" id="h6g-zf-O38"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qj7-DU-TKK" firstAttribute="top" secondItem="aFf-Dt-DQJ" secondAttribute="topMargin" id="MEW-aV-tAW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qj7-DU-TKK" secondAttribute="trailing" constant="-16" id="juS-3S-1ck"/>
+                            <constraint firstItem="qj7-DU-TKK" firstAttribute="leading" secondItem="aFf-Dt-DQJ" secondAttribute="leadingMargin" constant="-16" id="qG2-xy-6AP"/>
+                            <constraint firstItem="avv-Di-h0Z" firstAttribute="top" secondItem="qj7-DU-TKK" secondAttribute="bottom" id="x58-Jz-wYm"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1000"/>
+                    <connections>
+                        <outlet property="adView3" destination="DLs-bY-2Jd" id="7LF-zb-TvM"/>
+                        <outlet property="indRevStatBar" destination="xd2-3A-owH" id="Dtd-6x-qsc"/>
+                        <outlet property="indScroller" destination="qj7-DU-TKK" id="pfM-oc-VP1"/>
+                        <outlet property="indTermsBg" destination="aFf-Dt-DQJ" id="qkZ-xq-J5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGM-mG-C7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="1559"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j73-6K-NFH">
+            <objects>
+                <viewController id="6J0-j0-bnP" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X2e-12-cHu"/>
+                        <viewControllerLayoutGuide type="bottom" id="QLJ-TZ-3cz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CkK-AF-7jc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5v-nR-0G0">
+                                <rect key="frame" x="16" y="28" width="288" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="def" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeH-E8-s9T">
+                                <rect key="frame" x="16" y="83" width="288" height="208"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvl-zs-lHX">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <animations/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmg-Og-VoL">
+                                <rect key="frame" x="10" y="480" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XaL-Or-bj4" kind="presentation" id="tAO-Fk-KaB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Word" destination="g5v-nR-0G0" id="kvZ-nd-erH"/>
+                        <outlet property="adView4" destination="Vvl-zs-lHX" id="Pmc-Py-ceg"/>
+                        <outlet property="definition" destination="BeH-E8-s9T" id="djc-XZ-chA"/>
+                        <outlet property="indDefBg" destination="CkK-AF-7jc" id="2il-7o-Pzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZtF-0J-8H0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2061" y="679"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fXg-MO-PVH">
+            <objects>
+                <viewController id="zVw-8E-EKq" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBi-gm-GBq"/>
+                        <viewControllerLayoutGuide type="bottom" id="GD6-1e-oTa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMk-d0-Fe2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What was the Industrial Revolution?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-Rp-iVL">
+                                <rect key="frame" x="0.0" y="20" width="320" height="105"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jJ0-h4-SQ8">
+                                <rect key="frame" x="0.0" y="110" width="320" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Period of time when computers began to replace manual labor in the workforce">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="indAns1:" destination="zVw-8E-EKq" eventType="touchUpInside" id="CQh-fb-fBR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBF-aL-1yu">
+                                <rect key="frame" x="266" y="518" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="indNext:" destination="zVw-8E-EKq" eventType="touchUpInside" id="4dc-lv-voY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pri-Ru-ZO9">
+                                <rect key="frame" x="16" y="16" width="99" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back to Terms">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XaL-Or-bj4" kind="presentation" id="96I-xb-iXX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-eO-13N">
+                                <rect key="frame" x="0.0" y="206" width="320" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Using teenagers as factory laborers and as farm hands on English farms">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="indAns2:" destination="zVw-8E-EKq" eventType="touchUpInside" id="Gss-1m-kvF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zix-7x-6e9">
+                                <rect key="frame" x="0.0" y="302" width="320" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Period of time from 1750 – 1900 when technology changed greatly and the # of machine made goods increased greatly">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="indAns3:" destination="zVw-8E-EKq" eventType="touchUpInside" id="1Mq-w6-4a0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaJ-mp-Clw">
+                                <rect key="frame" x="0.0" y="494" width="320" height="44"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rvs-fK-yWD">
+                                <rect key="frame" x="0.0" y="398" width="320" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Increased populations of urban areas during the 1800s as a result of new, inexpensive housing and new educational opportunities">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="indAns4:" destination="zVw-8E-EKq" eventType="touchUpInside" id="Me5-l9-9DR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="indAnswer1" destination="jJ0-h4-SQ8" id="Eds-rA-Sxp"/>
+                        <outlet property="indAnswer2" destination="s2W-eO-13N" id="jXV-Ze-DoX"/>
+                        <outlet property="indAnswer3" destination="zix-7x-6e9" id="hFC-MW-bIL"/>
+                        <outlet property="indAnswer4" destination="Rvs-fK-yWD" id="vh9-Zm-xXp"/>
+                        <outlet property="indQuestion" destination="Ye2-Rp-iVL" id="viz-8d-irg"/>
+                        <outlet property="indQuizBg" destination="IMk-d0-Fe2" id="dLZ-QP-MV9"/>
+                        <outlet property="indResult" destination="MaJ-mp-Clw" id="Qrc-2B-RCQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcS-Hd-R24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="1388"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JKa-Tt-A6C">
+            <objects>
+                <viewController id="rFn-1F-Ncd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHw-NR-7xz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ecJ-Hs-K5l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54O-jS-5ph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgb-Iw-n7q">
+                                <rect key="frame" x="100" y="20" width="120" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTE-gr-elZ">
+                                <rect key="frame" x="5" y="20" width="37" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY1-Mg-lSe">
+                                <rect key="frame" x="50" y="20" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background Color - 20 Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59u-Ym-ryX">
+                                <rect key="frame" x="5" y="74" width="217" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpt-JJ-WfM">
+                                <rect key="frame" x="32" y="103" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="redBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="jRT-HX-XZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mir-ZB-x55">
+                                <rect key="frame" x="180" y="161" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="yellowBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="SYS-aY-tb2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVu-Zv-BdB">
+                                <rect key="frame" x="32" y="161" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="orangeBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="RGc-tt-D6s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyb-JY-0pM">
+                                <rect key="frame" x="106" y="161" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="brownBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="W7T-GZ-L1r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1q-ZL-IAe">
+                                <rect key="frame" x="106" y="103" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="cyanBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="47s-ks-6rU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3d-Qf-91K">
+                                <rect key="frame" x="180" y="103" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="blueBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="6DA-Qf-dxg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1T-jo-fes">
+                                <rect key="frame" x="254" y="103" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="greenBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="9oS-db-2OF"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddY-iO-61f">
+                                <rect key="frame" x="254" y="161" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goldBg:" destination="rFn-1F-Ncd" eventType="touchUpInside" id="h8M-HY-cO6"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZ9-9W-Tq1">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <animations/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2u-pU-BvN">
+                                <rect key="frame" x="5" y="480" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ADj-tW-Z5r" kind="presentation" id="rvS-vd-1lj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.849609375" green="0.65025517369999997" blue="0.24433491960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="adView2" destination="HZ9-9W-Tq1" id="LtI-Dj-X0E"/>
+                        <outlet property="goldTest" destination="pY1-Mg-lSe" id="yQX-br-QXo"/>
+                        <outlet property="storeBg" destination="54O-jS-5ph" id="WvT-U8-UXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAr-mu-6yl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="1223"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unknown.png" width="225" height="225"/>
+        <image name="Unknown1.png" width="270" height="186"/>
+        <image name="classRanks" width="1019" height="765"/>
+        <image name="curve.png" width="640" height="200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tAO-Fk-KaB"/>
+        <segue reference="SAU-cK-1XJ"/>
+        <segue reference="Tdz-aC-rDf"/>
+        <segue reference="RQ7-db-5L5"/>
+        <segue reference="qRf-as-ZUE"/>
+    </inferredMetricsTieBreakers>
+</document>
